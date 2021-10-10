@@ -15,10 +15,10 @@ var events = [
   {
     id: 1,
     url: '',
-    title: 'Design Review',
+    title: 'Safety Induction',
     start: date,
     end: nextDay,
-    allDay: false,
+    allDay: true,
     extendedProps: {
       calendar: 'Business'
     }
@@ -26,7 +26,7 @@ var events = [
   {
     id: 2,
     url: '',
-    title: 'Meeting With Client',
+    title: 'PPE Issued',
     start: new Date(date.getFullYear(), date.getMonth() + 1, -11),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -10),
     allDay: true,
@@ -37,7 +37,7 @@ var events = [
   {
     id: 3,
     url: '',
-    title: 'Family Trip',
+    title: 'Internal HSE Audit',
     allDay: true,
     start: new Date(date.getFullYear(), date.getMonth() + 1, -9),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -7),
@@ -48,7 +48,7 @@ var events = [
   {
     id: 4,
     url: '',
-    title: "Doctor's Appointment",
+    title: "Work Permit Issued",
     start: new Date(date.getFullYear(), date.getMonth() + 1, -11),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -10),
     allDay: true,
@@ -59,7 +59,7 @@ var events = [
   {
     id: 5,
     url: '',
-    title: 'Dart Game?',
+    title: 'Risk Assesment',
     start: new Date(date.getFullYear(), date.getMonth() + 1, -13),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -12),
     allDay: true,
@@ -70,7 +70,7 @@ var events = [
   {
     id: 6,
     url: '',
-    title: 'Meditation',
+    title: 'HSE Meeting',
     start: new Date(date.getFullYear(), date.getMonth() + 1, -13),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -12),
     allDay: true,
@@ -81,7 +81,7 @@ var events = [
   {
     id: 7,
     url: '',
-    title: 'Dinner',
+    title: 'External HSE Audit',
     start: new Date(date.getFullYear(), date.getMonth() + 1, -13),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -12),
     allDay: true,
@@ -92,7 +92,7 @@ var events = [
   {
     id: 8,
     url: '',
-    title: 'Product Review',
+    title: 'HSE Program',
     start: new Date(date.getFullYear(), date.getMonth() + 1, -13),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -12),
     allDay: true,
@@ -114,7 +114,7 @@ var events = [
   {
     id: 10,
     url: '',
-    title: 'Monthly Checkup',
+    title: 'Monthly Meeting',
     start: prevMonth,
     end: prevMonth,
     allDay: true,

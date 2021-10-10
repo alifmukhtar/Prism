@@ -205,12 +205,12 @@ $(window).on('load', function () {
     colors: [window.colors.solid.primary, window.colors.solid.warning],
     series: [
       {
-        name: 'Earning',
-        data: [95, 177, 284, 256, 105, 63, 168, 218, 72]
+        name: 'Actual',
+        data: [95, 177, 284, 256, 105, 63, 168, 218, 72, 80, 100, 190, 40, 90]
       },
       {
-        name: 'Expense',
-        data: [-145, -80, -60, -180, -100, -60, -85, -75, -100]
+        name: 'Plan',
+        data: [-145, -80, -60, -180, -100, -60, -85, -75, -100, -90,-60, -75, -60, -50]
       }
     ],
     dataLabels: {
@@ -229,7 +229,7 @@ $(window).on('load', function () {
       }
     },
     xaxis: {
-      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+      categories: ['12/9', '13/9', '14/9', '15/9', '16/9', '17/9', '18/9', '19/9', '20/9', '21/9', '22/9', '23/9'],
       labels: {
         style: {
           colors: $textMutedColor,

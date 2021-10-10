@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>PRISM - Media Gallery</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/toastr.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-sliders.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/app-ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
+                        <div class="search-input">
+                            <div class="search-input-icon"><i data-feather="search"></i></div>
+                            <input class="form-control input" type="text" placeholder="Explore PRISM..." tabindex="-1" data-search="search">
+                            <div class="search-input-close"><i data-feather="x"></i></div>
+                            <ul class="search-list search-list-main"></ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ml-auto">
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">Michio Kaku</span><span class="user-status">General Manager</span></div><span class="avatar"><img class="round" src="app-assets/images/portrait/small/avatar-s-29.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user"><a class="dropdown-item" href="javascript:void(0);">
+                        <a class="dropdown-item" href="javascript:void(0);"><i class="mr-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="javascript:void(0);"><a class="dropdown-item" href="javascript:void(0);"><i class="mr-50" data-feather="power"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav align-items-center flex-row">
+                <li class="nav-item mr-auto"><a href="index.html"><div>
+                    <img src="app-assets/images/logo/logo-petronas.png" alt="avatar" style="height:40px">
+                            </div>
+                        
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                
+                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Page Layouts">Dashboard</span><span class="badge badge-light-primary badge-pill ml-auto mr-1">2</span></a>
+                    <ul class="menu-content">
+                        <li class="nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Collapsed Menu">Analytics</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="mapview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Collapsed Menu">Map View</span></a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Data </span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="flag"></i><span class="menu-title text-truncate" data-i18n="eCommerce">Drone Flights</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="eye"></i><span class="menu-title text-truncate" data-i18n="eCommerce">CCTV</span></a>
+                <li class=" active nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="folder"></i><span class="menu-title text-truncate" data-i18n="eCommerce">File Manager</span></a>
+
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Planner </span><i data-feather="more-horizontal"></i>
+                </li>
+    
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="eCommerce">Task</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="eCommerce">Calendar</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="eCommerce">Kanban</span></a>
+
+             
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Import </span><i data-feather="more-horizontal"></i>
+                </li>
+    
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="flag"></i><span class="menu-title text-truncate" data-i18n="eCommerce">CSV</span></a>
+
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Others </span><i data-feather="more-horizontal"></i>
+                </li>
+    
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="box"></i><span class="menu-title text-truncate" data-i18n="eCommerce">Model Overview</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="activity"></i><span class="menu-title text-truncate" data-i18n="eCommerce">Health & Maintenance</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="eCommerce">Report</span></a>
+                   
+    
+                
+    
+    
+
+
+
+            </ul>
+
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+      <!-- BEGIN: Content-->
+      <div class="app-content content ecommerce-application">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-left mb-0">File Manager</h2>
+                            <div class="breadcrumb-wrapper">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Media Gallery</a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
+                    <div class="form-group breadcrumb-right">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="content-detached content-right">
+                <div class="content-body">
+                    <!-- E-commerce Content Section Starts -->
+                    <section id="ecommerce-header">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="ecommerce-header-items">
+                                    <div class="result-toggler">
+                                        <button class="navbar-toggler shop-sidebar-toggler" type="button" data-toggle="collapse">
+                                            <span class="navbar-toggler-icon d-block d-lg-none"><i data-feather="menu"></i></span>
+                                        </button>
+                                        <div class="search-results">16285 results found</div>
+                                    </div>
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-icon btn-outline-primary view-btn grid-view-btn">
+                                            <input type="radio" name="radio_options" id="radio_option1" checked />
+                                            <i data-feather="grid" class="font-medium-3"></i>
+                                        </label>
+                                        <label class="btn btn-icon btn-outline-primary view-btn list-view-btn">
+                                            <input type="radio" name="radio_options" id="radio_option2" />
+                                            <i data-feather="list" class="font-medium-3"></i>
+                                        </label>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- E-commerce Content Section Starts -->
+
+                    <!-- background Overlay when sidebar is shown  starts-->
+                    <div class="body-content-overlay"></div>
+                    <!-- background Overlay when sidebar is shown  ends-->
+
+                    <!-- E-commerce Search Bar Starts -->
+                    <section id="ecommerce-searchbar" class="ecommerce-searchbar">
+                        <div class="row mt-1">
+                            <div class="col-sm-12">
+                                <div class="input-group input-group-merge">
+                                    <input type="text" class="form-control search-product" id="shop-search" placeholder="Search Product" aria-label="Search..." aria-describedby="shop-search" />
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i data-feather="search" class="text-muted"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- E-commerce Search Bar Ends -->
+
+
+                     <!-- E-commerce Search Bar Starts -->
+                     <section id="ecommerce-searchbar" class="ecommerce-searchbar">
+                        <div class="mt-1">
+                          <!-- Price Slider starts -->
+                     <div class="price-slider">
+                        <h6 class="filter-title">Time Range</h6>
+                        <div class="price-slider">
+                            <div class="range-slider mt-2" id="price-slider"></div>
+                        </div>
+                    </div>
+                    <!-- Price Range ends -->
+                        </div>
+                    </section>
+                    <!-- E-commerce Search Bar Ends -->
+
+                    
+
+                    <!-- E-commerce Products Starts -->
+                    <section id="ecommerce-products" class="grid-view">
+                        <div class="card ecommerce-card">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid card-img-top" src="../../../app-assets/images/pages/eCommerce/03.png" alt="img-placeholder" /></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-name">
+                                        <a class="text-info" href="app-ecommerce-details.html">1564-83 PB</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price">Johor</h6>
+                                    </div>
+                                </div>
+                                <h6 class="item-name">
+                                    <a class="text-body" href="app-ecommerce-details.html">Pengerang Integrated Petroleum</a>
+                                    <span class="card-text item-company">By <a href="javascript:void(0)" class="company-name">Apple</a></span>
+                                </h6>
+                                <p class="card-text item-description">
+                                    Composition 24-71, Carriage 6, Camera 2, …
+                                </p>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-cost">
+                                        <h4 class="item-price">$339.99</h4>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-light btn-wishlist">
+                                    <i data-feather="file-text"></i>
+                                    <span>Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-success btn-cart">
+                                    <i data-feather="download"></i>
+                                    <span class="add-to-cart">Download</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ecommerce-card">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid card-img-top" src="../../../app-assets/images/pages/eCommerce/03.png" alt="img-placeholder" /></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-name">
+                                        <a class="text-info" href="app-ecommerce-details.html">1564-83 PB</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price">Johor</h6>
+                                    </div>
+                                </div>
+                                <h6 class="item-name">
+                                    <a class="text-body" href="app-ecommerce-details.html">Pengerang Integrated Petroleum</a>
+                                    <span class="card-text item-company">By <a href="javascript:void(0)" class="company-name">Apple</a></span>
+                                </h6>
+                                <p class="card-text item-description">
+                                    Composition 24-71, Carriage 6, Camera 2, …
+                                </p>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-cost">
+                                        <h4 class="item-price">$339.99</h4>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-light btn-wishlist">
+                                    <i data-feather="file-text"></i>
+                                    <span>Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-success btn-cart">
+                                    <i data-feather="download"></i>
+                                    <span class="add-to-cart">Download</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ecommerce-card">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid card-img-top" src="../../../app-assets/images/pages/eCommerce/03.png" alt="img-placeholder" /></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-name">
+                                        <a class="text-info" href="app-ecommerce-details.html">1564-83 PB</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price">Johor</h6>
+                                    </div>
+                                </div>
+                                <h6 class="item-name">
+                                    <a class="text-body" href="app-ecommerce-details.html">Pengerang Integrated Petroleum</a>
+                                    <span class="card-text item-company">By <a href="javascript:void(0)" class="company-name">Apple</a></span>
+                                </h6>
+                                <p class="card-text item-description">
+                                    Composition 24-71, Carriage 6, Camera 2, …
+                                </p>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-cost">
+                                        <h4 class="item-price">$339.99</h4>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-light btn-wishlist">
+                                    <i data-feather="file-text"></i>
+                                    <span>Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-success btn-cart">
+                                    <i data-feather="download"></i>
+                                    <span class="add-to-cart">Download</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ecommerce-card">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid card-img-top" src="../../../app-assets/images/pages/eCommerce/03.png" alt="img-placeholder" /></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-name">
+                                        <a class="text-info" href="app-ecommerce-details.html">1564-83 PB</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price">Johor</h6>
+                                    </div>
+                                </div>
+                                <h6 class="item-name">
+                                    <a class="text-body" href="app-ecommerce-details.html">Pengerang Integrated Petroleum</a>
+                                    <span class="card-text item-company">By <a href="javascript:void(0)" class="company-name">Apple</a></span>
+                                </h6>
+                                <p class="card-text item-description">
+                                    Composition 24-71, Carriage 6, Camera 2, …
+                                </p>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-cost">
+                                        <h4 class="item-price">$339.99</h4>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-light btn-wishlist">
+                                    <i data-feather="file-text"></i>
+                                    <span>Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-success btn-cart">
+                                    <i data-feather="download"></i>
+                                    <span class="add-to-cart">Download</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ecommerce-card">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid card-img-top" src="../../../app-assets/images/pages/eCommerce/03.png" alt="img-placeholder" /></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-name">
+                                        <a class="text-info" href="app-ecommerce-details.html">1564-83 PB</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price">Johor</h6>
+                                    </div>
+                                </div>
+                                <h6 class="item-name">
+                                    <a class="text-body" href="app-ecommerce-details.html">Pengerang Integrated Petroleum</a>
+                                    <span class="card-text item-company">By <a href="javascript:void(0)" class="company-name">Apple</a></span>
+                                </h6>
+                                <p class="card-text item-description">
+                                    Composition 24-71, Carriage 6, Camera 2, …
+                                </p>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-cost">
+                                        <h4 class="item-price">$339.99</h4>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-light btn-wishlist">
+                                    <i data-feather="file-text"></i>
+                                    <span>Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-success btn-cart">
+                                    <i data-feather="download"></i>
+                                    <span class="add-to-cart">Download</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ecommerce-card">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid card-img-top" src="../../../app-assets/images/pages/eCommerce/03.png" alt="img-placeholder" /></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-name">
+                                        <a class="text-info" href="app-ecommerce-details.html">1564-83 PB</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price">Johor</h6>
+                                    </div>
+                                </div>
+                                <h6 class="item-name">
+                                    <a class="text-body" href="app-ecommerce-details.html">Pengerang Integrated Petroleum</a>
+                                    <span class="card-text item-company">By <a href="javascript:void(0)" class="company-name">Apple</a></span>
+                                </h6>
+                                <p class="card-text item-description">
+                                    Composition 24-71, Carriage 6, Camera 2, …
+                                </p>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-cost">
+                                        <h4 class="item-price">$339.99</h4>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-light btn-wishlist">
+                                    <i data-feather="file-text"></i>
+                                    <span>Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-success btn-cart">
+                                    <i data-feather="download"></i>
+                                    <span class="add-to-cart">Download</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ecommerce-card">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid card-img-top" src="../../../app-assets/images/pages/eCommerce/03.png" alt="img-placeholder" /></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-name">
+                                        <a class="text-info" href="app-ecommerce-details.html">1564-83 PB</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price">Johor</h6>
+                                    </div>
+                                </div>
+                                <h6 class="item-name">
+                                    <a class="text-body" href="app-ecommerce-details.html">Pengerang Integrated Petroleum</a>
+                                    <span class="card-text item-company">By <a href="javascript:void(0)" class="company-name">Apple</a></span>
+                                </h6>
+                                <p class="card-text item-description">
+                                    Composition 24-71, Carriage 6, Camera 2, …
+                                </p>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-cost">
+                                        <h4 class="item-price">$339.99</h4>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-light btn-wishlist">
+                                    <i data-feather="file-text"></i>
+                                    <span>Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-success btn-cart">
+                                    <i data-feather="download"></i>
+                                    <span class="add-to-cart">Download</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ecommerce-card">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid card-img-top" src="../../../app-assets/images/pages/eCommerce/03.png" alt="img-placeholder" /></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-name">
+                                        <a class="text-info" href="app-ecommerce-details.html">1564-83 PB</a>
+                                        
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price">Johor</h6>
+                                    </div>
+                                </div>
+                                <h6 class="item-name">
+                                    <a class="text-body" href="app-ecommerce-details.html">Pengerang Integrated Petroleum</a>
+                                    <span class="card-text item-company">By <a href="javascript:void(0)" class="company-name">Apple</a></span>
+                                </h6>
+                                <p class="card-text item-description">
+                                    Composition 24-71, Carriage 6, Camera 2, …
+                                </p>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-cost">
+                                        <h4 class="item-price">$339.99</h4>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-light btn-wishlist">
+                                    <i data-feather="file-text"></i>
+                                    <span>Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-success btn-cart">
+                                    <i data-feather="download"></i>
+                                    <span class="add-to-cart">Download</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        
+                    </section>
+                    <!-- E-commerce Products Ends -->
+
+                    <!-- E-commerce Pagination Starts -->
+                    <section id="ecommerce-pagination">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center mt-2">
+                                        <li class="page-item prev-item"><a class="page-link" href="javascript:void(0);"></a></li>
+                                        <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                        <li class="page-item" aria-current="page"><a class="page-link" href="javascript:void(0);">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0);">7</a></li>
+                                        <li class="page-item next-item"><a class="page-link" href="javascript:void(0);"></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- E-commerce Pagination Ends -->
+
+                </div>
+            </div>
+            <div class="sidebar-detached sidebar-left">
+                <div class="sidebar">
+                    <!-- Ecommerce Sidebar Starts -->
+                    <div class="sidebar-shop">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6 class="filter-heading d-none d-lg-block">Filters</h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Price Filter starts -->
+                                <div class="multi-range-price">
+                                    <h6 class="filter-title mt-0">Upload Date</h6>
+                                    <ul class="list-unstyled price-range" id="price-range">
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="priceAll" name="price-range" class="custom-control-input" checked />
+                                                <label class="custom-control-label" for="priceAll">Last Hour</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="priceRange1" name="price-range" class="custom-control-input" />
+                                                <label class="custom-control-label" for="priceRange1">Today</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="priceRange2" name="price-range" class="custom-control-input" />
+                                                <label class="custom-control-label" for="priceRange2">This Week</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="priceARange3" name="price-range" class="custom-control-input" />
+                                                <label class="custom-control-label" for="priceARange3">This Month</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="priceRange4" name="price-range" class="custom-control-input" />
+                                                <label class="custom-control-label" for="priceRange4">This Year</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Price Filter ends -->
+
+                               
+
+                                <!-- Categories Starts -->
+                                <div id="priority-categories">
+                                    <h6 class="filter-title">Priority</h6>
+                                    <ul class="list-unstyled categories-list">
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="category1" name="category-filter" class="custom-control-input" checked />
+                                                <label class="custom-control-label" for="category1">Low</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="category2" name="category-filter" class="custom-control-input" />
+                                                <label class="custom-control-label" for="category2">Medium</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="category3" name="category-filter" class="custom-control-input" />
+                                                <label class="custom-control-label" for="category3">High</label>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <!-- Categories Ends -->
+
+                                 <!-- Categories Starts -->
+                                 <div id="media-categories">
+                                    <h6 class="filter-title">Media</h6>
+                                    <ul class="list-unstyled categories-list">
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="category4" name="media-filter" class="custom-control-input" checked />
+                                                <label class="custom-control-label" for="category4">Photos</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="category5" name="media-filter" class="custom-control-input" />
+                                                <label class="custom-control-label" for="category5">Videos</label>
+                                            </div>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                <!-- Categories Ends -->
+
+                                <!-- Brands starts -->
+                                <div class="brands">
+                                    <h6 class="filter-title">Input Stream</h6>
+                                    <ul class="list-unstyled brand-list">
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="productBrand1" />
+                                                <label class="custom-control-label" for="productBrand1">CCTV</label>
+                                            </div>
+                                            <span>746</span>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="productBrand2" checked />
+                                                <label class="custom-control-label" for="productBrand2">Smart Helmet</label>
+                                            </div>
+                                            <span>633</span>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="productBrand3" />
+                                                <label class="custom-control-label" for="productBrand3">Smart Glasses</label>
+                                            </div>
+                                            <span>591</span>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="productBrand4" />
+                                                <label class="custom-control-label" for="productBrand4">IoT Devices</label>
+                                            </div>
+                                            <span>530</span>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="productBrand5" checked />
+                                                <label class="custom-control-label" for="productBrand5">Mobile Devices</label>
+                                            </div>
+                                            <span>442</span>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="productBrand6" />
+                                                <label class="custom-control-label" for="productBrand6">Orthophotograph</label>
+                                            </div>
+                                            <span>394</span>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="productBrand7" />
+                                                <label class="custom-control-label" for="productBrand7">Point Cloud</label>
+                                            </div>
+                                            <span>350</span>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="productBrand8" />
+                                                <label class="custom-control-label" for="productBrand8">Mesh</label>
+                                            </div>
+                                            <span>320</span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <!-- Brand ends -->
+
+                                
+
+                                <!-- Clear Filters Starts -->
+                                <div id="clear-filters">
+                                    <button type="button" class="btn btn-block btn-primary">Clear All Filters</button>
+                                </div>
+                                <!-- Clear Filters Ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ecommerce Sidebar Ends -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ml-25" href="https://aerodyne.group/" target="_blank">Aerodyne Group</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+   <!-- BEGIN: Vendor JS-->
+   <script src="app-assets/vendors/js/vendors.min.js"></script>
+   <!-- BEGIN Vendor JS-->
+
+   <!-- BEGIN: Page Vendor JS-->
+   <script src="app-assets/vendors/js/extensions/wNumb.min.js"></script>
+   <script src="app-assets/vendors/js/extensions/nouislider.min.js"></script>
+ 
+   <!-- END: Page Vendor JS-->
+
+   <!-- BEGIN: Theme JS-->
+   <script src="app-assets/js/core/app-menu.js"></script>
+   <script src="app-assets/js/core/app.js"></script>
+   <!-- END: Theme JS-->
+
+   <!-- BEGIN: Page JS-->
+   <script src="app-assets/js/scripts/pages/app-ecommerce.js"></script>
+   <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+
+<style>
+.main-menu.menu-light .navigation > li ul .active {
+    background: linear-gradient(118deg, #00AE9D, rgba(190, 255, 164, 0.7));
+    box-shadow: 0 0 0px 0px rgba(115, 103, 240, 0.7);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.main-menu.menu-light .navigation > li.active > a {
+    background: linear-gradient(118deg, #00AE9D, rgba(190, 255, 164, 0.7));
+    box-shadow: 0 0 0px 0px rgba(115, 103, 240, 0.7);
+    color: #FFFFFF;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+
+.badge.badge-light-primary {
+    background-color: #00AE9D;
+    color: #FFFF !important;
+}
+
+.card .card-header-boaderless {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+
+</style>
+
+
+
+
+
+
+</body>
+<!-- END: Body-->
+
+</html>

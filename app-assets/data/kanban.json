@@ -1,14 +1,14 @@
 [
   {
     "id": "board-in-progress",
-    "title": "In Progress",
+    "title": "Not Started",
     "item": [
       {
         "id": "in-progress-1",
-        "title": "Research FAQ page UX",
+        "title": "HSE Project Table",
         "comments": "3",
-        "badge-text": "UX",
-        "badge": "success",
+        "badge-text": "Urgent",
+        "badge": "danger",
         "due-date": "5 April",
         "attachments": "2",
         "assigned": [
@@ -19,11 +19,10 @@
       },
       {
         "id": "in-progress-2",
-        "title": "Find new images for pages",
+        "title": "Risk Assessment",
         "comments": "1",
-        "badge-text": "Images",
-        "image": "04.jpg",
-        "badge": "warning",
+        "badge-text": "Administration",
+        "badge": "success",
         "due-date": "2",
         "attachments": "5",
         "assigned": [
@@ -36,13 +35,13 @@
   },
   {
     "id": "board-in-review",
-    "title": "In Review",
+    "title": "In Progress",
     "item": [
       {
         "id": "in-review-1",
         "title": "Review completed Apps",
         "comments": "6",
-        "badge-text": "App",
+        "badge-text": "Medium",
         "badge": "info",
         "due-date": "8 April",
         "attachments": "2",
@@ -54,9 +53,9 @@
       },
       {
         "id": "in-review-2",
-        "title": "Review Javascript code",
+        "title": "Safety Induction",
         "comments": "2",
-        "badge-text": "Code Review",
+        "badge-text": "Managers",
         "badge": "danger",
         "attachments": "4",
         "due-date": "10 April",
@@ -70,7 +69,7 @@
   },
   {
     "id": "board-done",
-    "title": "Done",
+    "title": "Completed",
     "item": [
       {
         "id": "done-1",

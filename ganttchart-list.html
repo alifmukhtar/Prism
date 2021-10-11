@@ -14,11 +14,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
-    <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/nouislider.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/toastr.min.css">
-    <!-- END: Vendor CSS-->
+   <!-- BEGIN: Vendor CSS-->
+   <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+   <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/maps/leaflet.min.css">
+   <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
@@ -31,9 +30,7 @@
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-sliders.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/app-ecommerce.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/maps/map-leaflet.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -162,12 +159,12 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">2D Compare Mode</h2>
+                            <h2 class="content-header-title float-left mb-0">Zone Gantt Chart</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item active">2D Map</a>
+                                    <li class="breadcrumb-item active">Zone</a>
                                     </li>
                                     
                                 </ol>
@@ -175,281 +172,173 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
-                    <div class="form-group breadcrumb-right">
-                        
+                
+            </div>
+
+
+            <!-- Marker Circle & Polygon Starts -->
+            <div class="col-12">
+                <div class="card mb-4">
+                  
+                    <div class="card-body">
+                        <div class="leaflet-map" id="shape-map"></div>
                     </div>
                 </div>
             </div>
-            <div class="content-detached content-right">
-                <div class="content-body">
-                    <!-- E-commerce Content Section Starts -->
-                    <section id="ecommerce-header">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="ecommerce-header-items">
-                                    <div class="result-toggler">
-                                        <button class="navbar-toggler shop-sidebar-toggler" type="button" data-toggle="collapse">
-                                            <span class="navbar-toggler-icon d-block d-lg-none"><i data-feather="menu"></i></span>
-                                        </button>
-                                        <div class="search-results">Cover Report</div>
-                                    </div>
-                                    <div class="demo-inline-spacing">
-                                        <button type="button" class="btn btn-outline-primary">
-                                            <i data-feather="file-text" class="mr-25"></i>
-                                            <span>Download PDF</span>
-                                        </button>
-                                       
-                                        <button type="button" class="btn btn-outline-primary">
-                                            <i data-feather="download" class="mr-25"></i>
-                                            <span>Download Excel</span>
-                                        </button>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-                    </section>
-                    <!-- E-commerce Content Section Starts -->
-
-                    <!-- background Overlay when sidebar is shown  starts-->
-                    <div class="body-content-overlay"></div>
-                    <!-- background Overlay when sidebar is shown  ends-->
-
-                    
+            <!-- /Marker Circle & Polygon Ends -->
 
 
-                   
 
-                    
+             <!-- Basic Tables 2 start -->
+             <div class="row" id="table-hover-row">
+                <div class="col-12">
+                 <div class="card ">
+                   <div class="card-header">
+                       <h4 class="card-title">List of Zone</h4>
+                       <a type="button" class="btn btn-primary waves-effect waves-float waves-light" href="mapview-incident.html">+  Create Zone</a>
+                   </div>
+                   <hr />
+                   <div class="card-body">
+                       <p class="card-text">Show
+                       <select class="col-lg-1 "name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="custom-select form-control"><option value="7">3</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="75">75</option><option value="100">100</option></select>
+                   entries</p>
 
-                    <!-- E-commerce Products Starts -->
+                  
+                      
+                   </div>
                
-                           
-                            
-
-
-
-                          <!-- Blog -->
-                          <div class="card mt-1">
-                            <div class="card-body">
-                                <img src="app-assets/images/banner/banner-42.png" class="img-fluid card-img-top" alt="Blog Detail Pic" />
+             
+               <div class="table-responsive">
+                   <table class="table table-hover">
+                       <thead>
+                           <tr>
+                               <th><div class="custom-control custom-checkbox"> <input class="custom-control-input" type="checkbox" value="" id="checkboxSelectAll" /><label class="custom-control-label" for="checkboxSelectAll"></label></div></th>
+                               <th>ZONE TAGGING</th>
+                               <th>ACTION</th>
+                               <th>WBS</th>
+                               <th>PLANNING </br>(START TIME)</th>
+                               <th>PLANNING </br>(END TIME)</th>
+                               <th>ACTUAL</br> (START TIME)</th>
+                               <th>ACTUAL </br>(END TIME)</th>
+                               <th>CODE</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td><div class="custom-control custom-checkbox"> <input class="custom-control-input dt-checkboxes" type="checkbox" value="" id="checkbox' + data +'" /><label class="custom-control-label" for="checkbox' + data +'"></label></div></td>
+                               <td> <div class="d-flex">
+                                   <span class="avatar mr-1 bg-light-success"><img class="round" src="app-assets/images/avatars/welder-1.svg" alt="avatar" height="40" width="40"></span>
+                                   <div class="d-flex flex-column align-items-start">
+                                   <span class="font-weight-bold">Site Zone A</span>
+                                   </div></div>
+                               </td>
+                               <td>PPE Briefing</td>
+                               <td>554898</td>
+                               <td>09:00AM</td>
+                               <td>11.30AM</td>
+                               <td>09.12AM</td>
+                               <td>12.12PM</td>
+                               <td>KKLT12355</td>
+                             
                                
-                        </div>
-                    </div>
-                        <!--/ Blog -->
+                           </tr>
 
-                    
-                    <!-- E-commerce Products Ends -->
+                           <tr>
+                            <td><div class="custom-control custom-checkbox"> <input class="custom-control-input dt-checkboxes" type="checkbox" value="" id="checkbox' + data +'" /><label class="custom-control-label" for="checkbox' + data +'"></label></div></td>
+                            <td> <div class="d-flex">
+                                <span class="avatar mr-1 bg-light-success"><img class="round" src="app-assets/images/avatars/welder-2.svg" alt="avatar" height="40" width="40"></span>
+                                <div class="d-flex flex-column align-items-start">
+                                <span class="font-weight-bold">Site Zone B</span>
+                                </div></div>
+                            </td>
+                            <td>Digging Trenches</td>
+                            <td>5423854</td>
+                            <td>08:30AM</td>
+                            <td>05.30PM</td>
+                            <td>08.12AM</td>
+                            <td>06.12PM</td>
+                            <td>KJ78976J</td>
+                          
+                            
+                        </tr>
+
+                        <tr>
+                            <td><div class="custom-control custom-checkbox"> <input class="custom-control-input dt-checkboxes" type="checkbox" value="" id="checkbox' + data +'" /><label class="custom-control-label" for="checkbox' + data +'"></label></div></td>
+                            <td> <div class="d-flex">
+                                <span class="avatar mr-1 bg-light-success"><img class="round" src="app-assets/images/avatars/welder-3.svg" alt="avatar" height="40" width="40"></span>
+                                <div class="d-flex flex-column align-items-start">
+                                <span class="font-weight-bold">Site Zone C</span>
+                                </div></div>
+                            </td>
+                            <td>Site Maintenance</td>
+                            <td>598455</td>
+                            <td>10:00AM</td>
+                            <td>11.30AM</td>
+                            <td>09.59AM</td>
+                            <td>12.12PM</td>
+                            <td>WWQR00955</td>
+                          
+                            
+                        </tr>
+
+                        
+
+                           
+                           
+                           
+                           
+                           
+                           
+                          
+                       </tbody>
+                   </table>
+
+
+
+
+               </div>
+
+                       <!-- Separated Pagination starts -->
+<div class="d-flex justify-content-between row p-1 align-items-center card-body pl-3 pr-3">
+   <p>Showing 1 to 3 of 3 entries</p>
+      <nav aria-label="Page navigation example">
+             <ul class="pagination mt-2">
+                 <li class="page-item prev-item"><a class="page-link" href="javascript:void(0);"></a></li>
+                 
+                 <li class="page-item active" aria-current="page">
+                     <a class="page-link" href="javascript:void(0);">1</a>
+                 </li>
+                
+                 <li class="page-item next-item"><a class="page-link" href="javascript:void(0);"></a></li>
+             </ul>
+         </nav>
+
+<!-- Separated Pagination ends -->
+
+</div>
+
+
+
+               
+                  
 
                 
 
-                </div>
-            </div>
-            <div class="sidebar-detached sidebar-left">
-                <div class="sidebar">
-                    <!-- Ecommerce Sidebar Starts -->
-                    <div class="sidebar-shop">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h6 class="filter-heading d-none d-lg-block">Filters</h6>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-
-                                <!-- Search bar -->
-                       
-                            <div class="input-group input-group-merge">
-                                <input type="text" class="form-control" placeholder="Search here" />
-                                <div class="input-group-append">
-                                    <span class="input-group-text cursor-pointer">
-                                        <i data-feather="search"></i>
-                                    </span>
-                                </div>
-                            </div>
-                       
-                        <!--/ Search bar -->
-
-
-                                <!-- Price Filter starts -->
-                                <div class="multi-range-price">
-                                    <h6 class="filter-title">Report Type</h6>
-
-                                <div class="justify-content-between d-flex">
-
-
-
-                                
-                                <div >
-                                   <div >
-                                        <button type="button" class="btn btn-icon btn-outline-primary">
-                                        <i data-feather="file"></i>
-                                   </div>                              
-                                     <label for="productBrand3">Front</label>
-                                </div>
-
-                                <div>
-                                    <div class="align-item-center">
-                                         <button type="button" class="btn btn-icon btn-outline-primary">
-                                         <i data-feather="file"></i>
-                                    </div>                              
-                                      <label for="productBrand3">Summary</label>
-                                 </div>
-
-                                 <div>
-                                    <div class="align-item-center">
-                                         <button type="button" class="btn btn-icon btn-outline-primary">
-                                         <i data-feather="file"></i>
-                                    </div>                              
-                                      <label for="productBrand3">Content</label>
-                                 </div>
-
-                                 <div>
-                                    <div class="align-item-center">
-                                         <button type="button" class="btn btn-icon btn-outline-primary">
-                                         <i data-feather="file"></i>
-                                    </div>                              
-                                      <label for="productBrand3">Back</label>
-                                 </div>
 
 
 
 
-                                       
-                                      
-                                        
-                                   
-                                </div>
-                                <!-- Price Filter ends -->
-
-                               
-
-                                <!-- Categories Starts -->
-                                <div id="priority-categories">
-                                    <h6 class="filter-title">Vision</h6>
-                                    <ul class="list-unstyled categories-list">
-                                        <li>
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" id="category1" name="category-filter" class="custom-control-input" checked />
-                                                <label class="custom-control-label" for="category1">Thermal</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" id="category2" name="category-filter" class="custom-control-input" />
-                                                <label class="custom-control-label" for="category2">Visual</label>
-                                            </div>
-                                        </li>
-                                        
-                                        
-                                    </ul>
-                                </div>
-                                <!-- Categories Ends -->
-
-                               
-
-                                <!-- Brands starts -->
-                                <div class="brands">
-                                    <h6 class="filter-title">Components</h6>
-                                    <ul class="list-unstyled brand-list">
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand1" checked />
-                                                <label class="custom-control-label" for="productBrand1">All</label>
-                                            </div>
-                                            
-                                        </li>
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand2"/>
-                                                <label class="custom-control-label" for="productBrand2">Section A</label>
-                                            </div>
-                                           
-                                        </li>
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand3" />
-                                                <label class="custom-control-label" for="productBrand3">Section B</label>
-                                            </div>
-                                            
-                                        </li>
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand4" />
-                                                <label class="custom-control-label" for="productBrand4">Section C</label>
-                                            </div>
-                                            
-                                        </li>
-                                        
-                                        
-                                    </ul>
-                                </div>
-                                <!-- Brand ends -->
 
 
 
-                                 <!-- Brands starts -->
-                                 <div class="brands">
-                                    <h6 class="filter-title">Slides</h6>
-                                    <ul class="list-unstyled brand-list">
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand1" checked />
-                                                <label class="custom-control-label" for="productBrand1">All</label>
-                                            </div>
-                                            
-                                        </li>
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand2"/>
-                                                <label class="custom-control-label" for="productBrand2">LE</label>
-                                            </div>
-                                           
-                                        </li>
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand3" />
-                                                <label class="custom-control-label" for="productBrand3">SS</label>
-                                            </div>
-                                            
-                                        </li>
-                                        <li>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand4" />
-                                                <label class="custom-control-label" for="productBrand4">PS</label>
-                                            </div>
-                                            
-                                        </li>
-                                        <li>
-                                        
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="productBrand4" />
-                                                <label class="custom-control-label" for="productBrand4">TE</label>
-                                            </div>
-                                            
-                                        </li>
-                                        
-                                        
-                                    </ul>
-                                </div>
-                                <!-- Brand ends -->
+           </div>
+       </div>
 
-                                
 
-                                <!-- Clear Filters Starts -->
-                                <div id="clear-filters">
-                                    <button type="button" class="btn btn-block btn-primary">Clear All Filters</button>
-                                </div>
-                                <!-- Clear Filters Ends -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Ecommerce Sidebar Ends -->
+   </div>
+   <!-- Basic Tables end -->
 
-                </div>
-            </div>
+            
         </div>
     </div>
     <!-- END: Content-->
@@ -465,24 +354,22 @@
     <!-- END: Footer-->
 
 
-   <!-- BEGIN: Vendor JS-->
-   <script src="app-assets/vendors/js/vendors.min.js"></script>
-   <!-- BEGIN Vendor JS-->
+  <!-- BEGIN: Vendor JS-->
+  <script src="app-assets/vendors/js/vendors.min.js"></script>
+  <!-- BEGIN Vendor JS-->
 
-   <!-- BEGIN: Page Vendor JS-->
-   <script src="app-assets/vendors/js/extensions/wNumb.min.js"></script>
-   <script src="app-assets/vendors/js/extensions/nouislider.min.js"></script>
- 
-   <!-- END: Page Vendor JS-->
+  <!-- BEGIN: Page Vendor JS-->
+  <script src="app-assets/vendors/js/maps/leaflet.min.js"></script>
+  <!-- END: Page Vendor JS-->
 
-   <!-- BEGIN: Theme JS-->
-   <script src="app-assets/js/core/app-menu.js"></script>
-   <script src="app-assets/js/core/app.js"></script>
-   <!-- END: Theme JS-->
+  <!-- BEGIN: Theme JS-->
+  <script src="app-assets/js/core/app-menu.js"></script>
+  <script src="app-assets/js/core/app.js"></script>
+  <!-- END: Theme JS-->
 
-   <!-- BEGIN: Page JS-->
-   <script src="app-assets/js/scripts/pages/app-ecommerce.js"></script>
-   <!-- END: Page JS-->
+  <!-- BEGIN: Page JS-->
+  <script src="app-assets/js/scripts/maps/map-leaflet.js"></script>
+  <!-- END: Page JS-->
 
     <script>
         $(window).on('load', function() {

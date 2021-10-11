@@ -111,38 +111,92 @@ html .content .content-wrapper .content-header-right .btn-icon i, html .content 
 }
 
 html .navbar-floating.footer-static .app-content .content-area-wrapper, html .navbar-floating.footer-static .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 1.3rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 1.3rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 1) + 4.45rem + 3.35rem + 1.3rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 1) + 4.45rem + 3.35rem + 1.3rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-floating.footer-static .app-content .content-area-wrapper, html .navbar-floating.footer-static .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    1.3rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    1.3rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +
+    1.3rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +
+    1.3rem + 0rem
+    ));
   }
 }
 
 html .navbar-floating.footer-hidden .app-content .content-area-wrapper, html .navbar-floating.footer-hidden .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 0rem + 1.3rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 0rem + 1.3rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 2) + 4.45rem + 0rem + 1.3rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 2) + 4.45rem + 0rem + 1.3rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-floating.footer-hidden .app-content .content-area-wrapper, html .navbar-floating.footer-hidden .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +    1.3rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +    1.3rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +
+    1.3rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +
+    1.3rem + 0rem
+    ));
   }
 }
 
 html .navbar-floating.footer-fixed .app-content .content-area-wrapper, html .navbar-floating.footer-fixed .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 1.3rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 1.3rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 2) + 4.45rem + 3.35rem + 1.3rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 2) + 4.45rem + 3.35rem + 1.3rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-floating.footer-fixed .app-content .content-area-wrapper, html .navbar-floating.footer-fixed .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    1.3rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    1.3rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +
+    1.3rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +
+    1.3rem + 0rem
+    ));
   }
 }
 
@@ -151,38 +205,92 @@ html .navbar-hidden .app-content {
 }
 
 html .navbar-hidden.footer-static .app-content .content-area-wrapper, html .navbar-hidden.footer-static .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 1) + 0rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 0rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 1) + 0rem + 3.35rem + 0rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 1) + 0rem + 3.35rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-hidden.footer-static .app-content .content-area-wrapper, html .navbar-hidden.footer-static .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 0rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 0rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 0rem + 3.35rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 0rem + 3.35rem +
+    0rem + 0rem
+    ));
   }
 }
 
 html .navbar-hidden.footer-hidden .app-content .content-area-wrapper, html .navbar-hidden.footer-hidden .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 0rem + 0rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 0rem + 0rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 2) + 0rem + 0rem + 0rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 2) + 0rem + 0rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-hidden.footer-hidden .app-content .content-area-wrapper, html .navbar-hidden.footer-hidden .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 0rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 0rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 0rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 0rem +
+    0rem + 0rem
+    ));
   }
 }
 
 html .navbar-hidden.footer-fixed .app-content .content-area-wrapper, html .navbar-hidden.footer-fixed .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 0rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 0rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 2) + 0rem + 3.35rem + 0rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 2) + 0rem + 3.35rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-hidden.footer-fixed .app-content .content-area-wrapper, html .navbar-hidden.footer-fixed .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 3.35rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 3.35rem +
+    0rem + 0rem
+    ));
   }
 }
 
@@ -199,38 +307,92 @@ html .navbar-static .app-content {
 }
 
 html .navbar-static.footer-static .app-content .content-area-wrapper, html .navbar-static.footer-static .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-static.footer-static .app-content .content-area-wrapper, html .navbar-static.footer-static .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +
+    0rem + 0rem
+    ));
   }
 }
 
 html .navbar-static.footer-hidden .app-content .content-area-wrapper, html .navbar-static.footer-hidden .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem
+  ));#00ae9d
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-static.footer-hidden .app-content .content-area-wrapper, html .navbar-static.footer-hidden .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +
+    0rem + 0rem
+    ));
   }
 }
 
 html .navbar-static.footer-fixed .app-content .content-area-wrapper, html .navbar-static.footer-fixed .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-static.footer-fixed .app-content .content-area-wrapper, html .navbar-static.footer-fixed .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +
+    0rem + 0rem
+    ));
   }
 }
 
@@ -239,38 +401,92 @@ html .navbar-sticky .app-content {
 }
 
 html .navbar-sticky.footer-static .app-content .content-area-wrapper, html .navbar-sticky.footer-static .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-sticky.footer-static .app-content .content-area-wrapper, html .navbar-sticky.footer-static .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +
+    0rem + 0rem
+    ));
   }
 }
 
 html .navbar-sticky.footer-hidden .app-content .content-area-wrapper, html .navbar-sticky.footer-hidden .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-sticky.footer-hidden .app-content .content-area-wrapper, html .navbar-sticky.footer-hidden .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0rem +
+    0rem + 0rem
+    ));
   }
 }
 
 html .navbar-sticky.footer-fixed .app-content .content-area-wrapper, html .navbar-sticky.footer-fixed .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(
+  100vh -
+  calc(
+  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem
+  ));
+  height : calc(
+  var(--vh, 1vh) * 100 -
+  calc(
+  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem
+  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-sticky.footer-fixed .app-content .content-area-wrapper, html .navbar-sticky.footer-fixed .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(
+    100vh -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +
+    0rem + 0rem
+    ));
+    height : calc(
+    var(--vh, 1vh) * 100 -
+    calc(
+    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +
+    0rem + 0rem
+    ));
   }
 }
 
@@ -294,7 +510,8 @@ html [data-col='1-column'] .header-navbar {
 }
 
 html [data-col='1-column'] .header-navbar.floating-nav {
-  width : calc(  100vw - (100vw - 100%) - calc(2rem * 2)) !important;
+  width : calc(
+  100vw - (100vw - 100%) - calc(2rem * 2)) !important;
 }
 
 html [data-col='1-column'] .content, html [data-col='1-column'] .footer {
@@ -446,7 +663,7 @@ html .pace .pace-progress {
 
 .sidenav-overlay {
   position : fixed;
-  top : 0;
+  top : 0;#00ae9d
   right : 0;
   left : 0;
   height : 120vh;
@@ -458,7 +675,7 @@ html .pace .pace-progress {
   transition : all 0.5s ease;
 }
 
-.sidenav-overlay.show {
+.sidenav-o#00ae9dshow {
   opacity : 1;
   visibility : visible;
   transition : all 0.5s ease;
@@ -512,7 +729,7 @@ footer.footer .scroll-top {
 
 footer.footer-shadow {
   box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
-}
+}#00ae9d
 
 footer.footer-border {
   border-top : 1px solid #EBE9F1;
@@ -621,7 +838,7 @@ footer.footer-border {
   margin-top : 4px;
   margin-left : 5px;
 }
-
+#00ae9d
 .main-menu.menu-light .navigation > li > a i, .main-menu.menu-light .navigation > li > a svg {
   position : relative;
   top : 1px;
@@ -633,7 +850,7 @@ footer.footer-border {
 
 .main-menu.menu-light .navigation > li > ul li:not(.has-sub) {
   margin : 0 15px;
-}
+}#00ae9d
 
 .main-menu.menu-light .navigation > li > ul li.has-sub > a {
   margin : 0 15px;
@@ -687,7 +904,7 @@ footer.footer-border {
   padding : 0;
   margin : 0;
 }
-
+#00ae9d
 .main-menu.menu-light .navigation > li ul li {
   color : #6E6B7B;
   background : transparent;
@@ -759,7 +976,7 @@ footer.footer-border {
 .main-menu.menu-dark .navigation .navigation-header span {
   font-weight : 500;
 }
-
+#00ae9d
 .main-menu.menu-dark .navigation li.has-sub > a {
   transition : all 0.5s ease, background 0s, color 0s;
 }
@@ -1237,7 +1454,7 @@ footer.footer-border {
 }
 
 .avatar-group {
-  display : flex;
+  display : flex;#00ae9d
   justify-content : flex-start;
 }
 
@@ -2564,7 +2781,7 @@ footer.footer-border {
   background-color : #DD4B39;
 }
 
-.bg-instagram {
+.bg-instagram {#00ae9d
   background-color : #3F729B;
 }
 
@@ -2591,7 +2808,7 @@ footer.footer-border {
 .bg-reddit {
   background-color : #FF4500;
 }
-
+#00ae9d
 .bg-soundcloud {
   background-color : #FF5500;
 }
@@ -2711,7 +2928,7 @@ footer.footer-border {
 }
 
 .dark-layout #breadcrumb-alignment .breadcrumb-wrapper {
-  box-shadow : -1px 1px 10px rgba(0, 0, 0, 0.24);
+  box-shadow : -1px 1#00ae9d rgba(0, 0, 0, 0.24);
 }
 
 .buy-now {
@@ -2721,7 +2938,7 @@ footer.footer-border {
   z-index : 1031;
 }
 
-.buy-now .btn {
+.buy-now .btn {#00ae9d
   box-shadow : 0 1px 20px 1px #EA5455 !important;
 }
 
@@ -2737,7 +2954,7 @@ footer.footer-border {
 	Author: PIXINVENT
 	Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
-.customizer {
+.customize#00ae9d
   width : 400px;
   left : -400px;
   padding : 0;
@@ -2854,7 +3071,7 @@ footer.footer-border {
 .divider .divider-text:before {
   left : 100%;
 }
-
+#00ae9d
 .divider .divider-text:after {
   right : 100%;
 }
@@ -2882,7 +3099,7 @@ footer.footer-border {
 }
 
 .divider.divider-right-center .divider-text {
-  left : -25%;
+  left : -25%;#00ae9d
 }
 
 .divider.divider-dotted .divider-text:before, .divider.divider-dotted .divider-text:after {
@@ -2891,7 +3108,7 @@ footer.footer-border {
   border-top-width : 0;
   border-color : #EBE9F1;
 }
-
+#00ae9d
 .divider.divider-dashed .divider-text:before, .divider.divider-dashed .divider-text:after {
   border-style : dashed;
   border-width : 1px;
@@ -2917,13 +3134,13 @@ footer.footer-border {
 }
 
 .timeline .timeline-item .timeline-point {
-  position : absolute;
+  position : abso#00ae9d
   right : -0.85rem;
   top : 0;
   z-index : 2;
   display : flex;
-  justify-content : center;
-  align-items : center;
+  justify-content : c#00ae9d
+  align-items : c#00ae9d
   height : 1.75rem;
   width : 1.75rem;
   text-align : center;
@@ -2981,7 +3198,7 @@ footer.footer-border {
   bottom : 0;
   width : 1px;
   height : 100%;
-  background : linear-gradient(#EBE9F1, transparent);
+  background : linear#00ae9dnt(#EBE9F1, transparent);
 }
 
 @media screen and (min-width: 0) {
@@ -2994,7 +3211,7 @@ footer.footer-border {
 }
 
 @media screen and (min-width: 544px) {
-  head {
+  head {#00ae9d
     font-family : 'sm 544px';
   }
   body:after {
@@ -3098,12 +3315,12 @@ body:after {
   box-shadow : 0 5px 25px rgba(34, 41, 47, 0.1);
 }
 
-.select2-container--classic.select2-container--open .select2-selection--single, .select2-container--default.select2-container--open .select2-selection--single {
+.select2-c#00ae9dr--classic.select2-container--open .select2-selection--single, .select2-container--default.select2-container--open .select2-selection--single {
   border-color : #7367F0 !important;
   outline : 0;
 }
 
-.select2-container--classic.select2-container--focus, .select2-container--default.select2-container--focus {
+.select2-c#00ae9dr--classic.select2-container--focus, .select2-container--default.select2-container--focus {
   outline : 0;
 }
 

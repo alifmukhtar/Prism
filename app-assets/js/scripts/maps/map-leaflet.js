@@ -4414,7 +4414,7 @@ $(function () {
   // Markers
   // --------------------------------------------------------------------
   if ($('#shape-map').length) {
-    var markerMap = L.map('shape-map').setView([51.5, -0.09], 12);
+    var markerMap = L.map('shape-map').setView([51.5, -0.09], 13);
     var marker = L.marker([51.5, -0.09]).addTo(markerMap);
     var circle = L.circle([51.508, -0.11], {
       color: 'red',
